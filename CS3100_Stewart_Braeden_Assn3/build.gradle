@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group '1984'
+version '1.0'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    jcenter()
+}
+
+sourceSets{
+    main{
+        java{
+            srcDirs = ['src']
+        }
+    }
+}
+
+jar{
+    manifest{
+        attributes 'Main-Class':'App'
+    }
+}
+
+run{
+}
+
+mainClassName = 'App'
